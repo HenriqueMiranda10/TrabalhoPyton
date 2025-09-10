@@ -210,16 +210,16 @@ produto = float(input("digite o preço do produto: "))
 cliente = bool(input("voce é cliente vip?(true para 'sim' e false para 'nao'): "))
 
 if produto >= 100:
-    desconto = produto * 0.20
+    desconto = produto-(produto * 0.20)
 elif produto >= 50 and produto < 100:
-    desconto = produto * 0.10
+    desconto = produto-(produto * 0.10)
 elif produto < 50:
     desconto = produto
 
 print("seu produto com desconto: " + desconto)
 
 if cliente == True:
-    desconto = desconto * 0.05
+    desconto = desconto-(desconto * 0.05)
     print("seu produto com desconto vip: " + desconto)
 
 
